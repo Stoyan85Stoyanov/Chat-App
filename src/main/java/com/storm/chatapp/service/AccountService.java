@@ -50,7 +50,7 @@ public class AccountService implements UserDetailsService {
     }
 
     public Collection<? extends GrantedAuthority> authorities() {
-        return Arrays.asList(new SimpleGrantedAuthority("USER"));
+        return List.of(new SimpleGrantedAuthority("USER"));
     }
 
     public Account registerAccount(String username, String password) {

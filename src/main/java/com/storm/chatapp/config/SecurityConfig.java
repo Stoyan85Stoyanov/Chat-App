@@ -62,6 +62,5 @@ public class SecurityConfig {
     @Lazy
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(accountService).passwordEncoder(passwordEncoder());
-
     }
 }
